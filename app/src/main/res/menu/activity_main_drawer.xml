@@ -33,4 +33,12 @@
         </menu>
     </item>
 
+    <item android:title="Kotlin">
+        <menu>
+            <item
+                android:id="@+id/KotlinTest"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Test" />
+        </menu>
+    </item>
 </menu>
