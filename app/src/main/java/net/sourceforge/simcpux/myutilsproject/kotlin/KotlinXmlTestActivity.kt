@@ -2,6 +2,7 @@ package net.sourceforge.simcpux.myutilsproject.kotlin
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.jakewharton.rxbinding2.view.RxView
 import kotlinx.android.synthetic.main.activity_kotlin_xml_test.*
 import net.sourceforge.simcpux.myutilsproject.R
 
@@ -13,5 +14,7 @@ class KotlinXmlTestActivity : AppCompatActivity() {
         button.setOnClickListener {
             button.setText("test")
         }
+        RxView.clicks(button)
+                .subscribe()
     }
 }
