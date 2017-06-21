@@ -13,14 +13,14 @@ import org.jetbrains.anko.sdk25.coroutines.onClick
 /**
  * Created by huiping.guo on 17/6/13.
  */
-class KotlinTestUi : AnkoComponent<KotlinTestActivity>{
+class KotlinTestUi : AnkoComponent<KotlinAnkoTestActivity>{
     private val customStyle = { v: Any ->
         when (v) {
             is Button -> v.textSize = 26f
             is EditText -> v.textSize = 24f
         }
     }
-    override fun createView(ui: AnkoContext<KotlinTestActivity>): View = with(ui){
+    override fun createView(ui: AnkoContext<KotlinAnkoTestActivity>): View = with(ui){
         verticalLayout {
             padding = dip(32)
 

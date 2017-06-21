@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import net.sourceforge.simcpux.myutilsproject.kotlin.KotlinTestActivity;
+import net.sourceforge.simcpux.myutilsproject.kotlin.KotlinAnkoTestActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.KotlinTest) {
-            Intent intent = new Intent(this, KotlinTestActivity.class);
+            Intent intent = new Intent(this, KotlinAnkoTestActivity.class);
             startActivity(intent);
         }
 
