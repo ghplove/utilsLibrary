@@ -23,6 +23,7 @@ android {
     }
 }
 
+//选择性使用
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -35,6 +36,11 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:2.1.0'
 //    compile 'com.ogaclejapan:rxbinding:1.+'
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    compile 'com.android.support:support-v4:25.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
 }
 
 repositories {
