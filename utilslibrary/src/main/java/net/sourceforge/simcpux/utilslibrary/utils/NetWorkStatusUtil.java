@@ -36,6 +36,7 @@ public class NetWorkStatusUtil {
         return mNetWorkType;
     }
 
+
     public static boolean getNetWorkEnable(Context context){
         int mNetWorkType = getNetWorkStatus(context);
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -48,7 +49,7 @@ public class NetWorkStatusUtil {
         return false;
     }
 
-    private static int isFastMobileNetWork(NetworkInfo networkInfo){
+    public static int isFastMobileNetWork(NetworkInfo networkInfo){
         String subTypeName = networkInfo.getSubtypeName();
         int networkType = networkInfo.getSubtype();
         switch (networkType){
